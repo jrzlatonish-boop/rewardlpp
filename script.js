@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const supportData = {
     'Android Issues': {
         msg: 'What kind of Android issue are you having?',
-        options: ['Black Grass', 'Black Screen', 'Keyboard Crash', 'Emulator Freeze']
+        options: ['Black Grass', 'Black Screen', 'Keyboard Crash', 'Snapdragon Glitches', 'Emulator Freeze']
     },
     'iOS Issues': {
         msg: 'Select your iOS problem:',
@@ -253,6 +253,10 @@ const supportData = {
     },
     'Emulator Freeze': {
         msg: 'If your emulator freezes on start, ensure you have the correct prod.keys and firmware v22.1. On Android, using **Eden** prevents most freezes.',
+        options: ['Back to Start']
+    },
+    'Snapdragon Glitches': {
+        msg: '<strong>Snapdragon Fix:</strong> If you experience glitches on a Snapdragon phone:<br>1. Go to the <strong>GPU Drivers</strong> section.<br>2. Download the <strong>FIRST</strong> Turnip Kimchi version (not the last).<br>3. This version is more stable and fixes most graphical issues!',
         options: ['Back to Start']
     },
     'Back to Start': {
