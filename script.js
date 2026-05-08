@@ -224,16 +224,16 @@ const supportData = {
         options: ['Back to Start']
     },
     'Black Grass': {
-        msg: '<strong>Android Fix:</strong> Use the <strong>Eden Emulator</strong>. It specifically fixes the Black Grass, Black Screen, and performance problems! <br><br><a href="https://git.eden-emu.dev/eden-ci/pr/releases/tag/3901" target="_blank" style="color: var(--success); font-weight: bold; text-decoration: underline;">[Download Eden v3901]</a> <br><br><strong>Alternative:</strong> Citron also has a fix.',
+        msg: '<strong>Android Fix:</strong> Use the <strong>Eden Nightly</strong> build. It specifically fixes the Black Grass, Black Screen, and performance problems! <br><br><a href="https://www.mediafire.com/file/ka2ex4f2g7o5rq8/Eden-Nightly-Android-17c341ff6c-standard.apk/file" target="_blank" style="color: var(--success); font-weight: bold; text-decoration: underline;">[Download Recommended Eden Nightly APK]</a> <br><br><strong>Alternative:</strong> Citron also has a fix.',
         img: 'assets/images/grass_fix.webp',
         options: ['Back to Start']
     },
     'Black Screen': {
-        msg: '<strong>Android Fix:</strong> Use the <strong>Eden Emulator</strong>. This version is the most stable and fixes the Black Screen issue on start! <br><br><a href="https://git.eden-emu.dev/eden-ci/pr/releases/tag/3901" target="_blank" style="color: var(--success); font-weight: bold; text-decoration: underline;">[Download Eden APK]</a>',
+        msg: '<strong>Android Fix:</strong> Use the <strong>Eden Nightly</strong> build. This version is the most stable and fixes the Black Screen issue on start! <br><br><a href="https://www.mediafire.com/file/ka2ex4f2g7o5rq8/Eden-Nightly-Android-17c341ff6c-standard.apk/file" target="_blank" style="color: var(--success); font-weight: bold; text-decoration: underline;">[Download Recommended Eden Nightly APK]</a>',
         options: ['Back to Start']
     },
     'Keyboard Crash': {
-        msg: '<strong>Android Fix:</strong> Use the <strong>Eden Emulator</strong>. This version is currently the best for Android as it avoids crashes and supports stable gameplay! <br><br><a href="https://git.eden-emu.dev/eden-ci/pr/releases/tag/3901" target="_blank" style="color: var(--success); font-weight: bold; text-decoration: underline;">[Download Eden APK]</a> <br><br><strong>iOS Fix:</strong> Use the MeloNX 2.3.1 Fixed Version.',
+        msg: '<strong>Android Fix:</strong> Use the <strong>Eden Nightly</strong> build. This version is currently the best for Android as it avoids crashes and supports stable gameplay! <br><br><a href="https://www.mediafire.com/file/ka2ex4f2g7o5rq8/Eden-Nightly-Android-17c341ff6c-standard.apk/file" target="_blank" style="color: var(--success); font-weight: bold; text-decoration: underline;">[Download Recommended Eden Nightly APK]</a> <br><br><strong>iOS Fix:</strong> Use the MeloNX 2.3.1 Fixed Version.',
         img: 'assets/images/tomodachi-life-problemfortyping.webp',
         options: ['Back to Start']
     },
@@ -252,7 +252,7 @@ const supportData = {
         options: ['Back to Start']
     },
     'Emulator Freeze': {
-        msg: 'If your emulator freezes on start, ensure you have the correct prod.keys and firmware v22.1. On Android, using **Eden** prevents most freezes.',
+        msg: 'If your emulator freezes on start, ensure you have the correct prod.keys and firmware v22.1. On Android, using **Eden Nightly** prevents most freezes.',
         options: ['Back to Start']
     },
     'Snapdragon Glitches': {
