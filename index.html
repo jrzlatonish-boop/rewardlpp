@@ -153,9 +153,23 @@
                     <!-- Android -->
                     <div class="tab-panel active" id="tab-android">
                         <div class="tutorial-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-                            <!-- Citron Guide -->
-                            <div class="tutorial-card glass" style="border: 1px solid var(--secondary);">
-                                <div class="step-badge" style="background: var(--secondary); color: #000;">NEW GUIDE</div>
+                            <!-- Eden Guide (Recommended) -->
+                            <div class="tutorial-card glass" style="border: 2px solid var(--success);">
+                                <div class="step-badge" style="background: var(--success); color: #fff;">RECOMMENDED GUIDE</div>
+                                <div class="video-wrapper blurred" onclick="this.classList.remove('blurred')">
+                                    <div class="video-unlock-overlay"><i class="ph ph-lock-key"></i><span>Click to Unlock
+                                            Eden Guide</span></div>
+                                    <iframe data-src="https://www.youtube.com/embed/s9SQCUaClPw" title="Eden Android Setup Guide"
+                                        allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="tutorial-info">
+                                    <h3>🤖 Eden — Setup Guide <span class="badge badge--online" style="background: var(--success); color: #fff; font-size: 0.6rem;">BEST</span></h3>
+                                    <p>The most stable setup for Android. Fixes black grass and major crashes.</p>
+                                </div>
+                            </div>
+                            <!-- Citron Guide (Alternative) -->
+                            <div class="tutorial-card glass" style="opacity: 0.9;">
+                                <div class="step-badge" style="background: rgba(61, 181, 231, 0.15); color: var(--primary);">ALTERNATIVE</div>
                                 <div class="video-wrapper blurred" onclick="this.classList.remove('blurred')">
                                     <div class="video-unlock-overlay"><i class="ph ph-lock-key"></i><span>Click to Unlock
                                             Citron Guide</span></div>
@@ -163,22 +177,8 @@
                                         allowfullscreen loading="lazy"></iframe>
                                 </div>
                                 <div class="tutorial-info">
-                                    <h3>🍋 Citron — Best Android Setup <span class="badge badge--new" style="background: var(--secondary); color: #000; font-size: 0.6rem;">NEW</span></h3>
-                                    <p>How to setup Citron (No Black Grass & Fixes Keyboard crashes).</p>
-                                </div>
-                            </div>
-                            <!-- General Guide -->
-                            <div class="tutorial-card glass" style="opacity: 0.8;">
-                                <div class="step-badge" style="background: rgba(244, 63, 94, 0.15); color: var(--primary);">NOT RECOMMENDED</div>
-                                <div class="video-wrapper blurred" onclick="this.classList.remove('blurred')">
-                                    <div class="video-unlock-overlay"><i class="ph ph-lock-key"></i><span>Click to Unlock
-                                            Old Guide</span></div>
-                                    <iframe data-src="https://www.youtube.com/embed/s9SQCUaClPw" title="General Android Setup Guide"
-                                        allowfullscreen loading="lazy"></iframe>
-                                </div>
-                                <div class="tutorial-info">
-                                    <h3>🤖 Eden/MeloNX — Setup Guide</h3>
-                                    <p>Old setup for other emulators. May have black grass or keyboard crashes.</p>
+                                    <h3>🍋 Citron — Android Setup</h3>
+                                    <p>Secondary option for Android users. Supports keyboard typing.</p>
                                 </div>
                             </div>
                         </div>
@@ -403,51 +403,50 @@
 
                     <!-- Tools Column -->
                     <div class="tools-column">
-                        <!-- Citron Emulator -->
-                        <div class="tool-card glass animate-on-scroll delay-1" style="border: 2px solid var(--secondary); background: rgba(253, 184, 19, 0.05);">
+                        <!-- Eden Emulator (Best) -->
+                        <div class="tool-card glass animate-on-scroll delay-1" style="border: 2px solid var(--success); background: rgba(16, 185, 129, 0.05);">
                             <div class="tool-card__header">
-                                <div class="tool-card__icon" style="background: rgba(253, 184, 19, 0.15);"><i class="ph-fill ph-lightning"></i></div>
+                                <div class="tool-card__icon" style="background: rgba(16, 185, 129, 0.15);"><i class="ph-fill ph-sparkle"></i></div>
                                 <div>
-                                    <h3 style="color: var(--secondary);">Citron Emulator (Best)</h3>
-                                    <p>Recommended for Android</p>
+                                    <h3 style="color: var(--success);">Eden Emulator (Best)</h3>
+                                    <p>Recommended for Android / PC / Mac</p>
                                 </div>
                             </div>
                             <div class="tool-links">
-                                <div class="dl-notice" style="margin-bottom: 12px; background: rgba(253, 184, 19, 0.1); color: var(--text);">
-                                    <i class="ph-fill ph-star" style="color: var(--secondary);"></i>
-                                    <span>Fixes <strong>Black Screen</strong>, <strong>Black Grass</strong>, and <strong>Keyboard</strong> crashes!</span>
+                                <div class="dl-notice" style="margin-bottom: 12px; background: rgba(16, 185, 129, 0.1); color: var(--text);">
+                                    <i class="ph-fill ph-check-circle" style="color: var(--success);"></i>
+                                    <span>Fixes <strong>Black Grass</strong>, <strong>Black Screen</strong>, and performance issues!</span>
                                 </div>
-                                <a href="https://gofile.io/d/ng3S4h"
-                                    class="btn-tool btn-tool--vibrant" target="_blank" style="background: var(--secondary); color: #000;">
-                                    <i class="ph-fill ph-download-simple"></i> Download Citron APK
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Eden Emulator -->
-                        <div class="tool-card glass animate-on-scroll delay-1">
-                            <div class="tool-card__header">
-                                <div class="tool-card__icon"><i class="ph-fill ph-cpu"></i></div>
-                                <div>
-                                    <h3>Eden Emulator</h3>
-                                    <p>Android / Windows / Mac</p>
-                                </div>
-                            </div>
-                            <div class="tool-links">
                                 <a href="https://git.eden-emu.dev/eden-ci/pr/releases/tag/3901"
-                                    class="btn-tool btn-tool--vibrant" target="_blank" style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); color: #10B981;">
-                                    <i class="ph-fill ph-sparkle"></i> Eden v3901 (Black Grass Fix)
+                                    class="btn-tool btn-tool--vibrant" target="_blank" style="background: var(--success); border: none; color: #fff;">
+                                    <i class="ph-fill ph-download-simple"></i> Eden v3901 (Recommended)
                                 </a>
                                 <a href="https://git.eden-emu.dev/eden-ci/nightly/releases/download/v1776193290.f11b69d6b7/Eden-Android-f11b69d6b7-optimized.apk"
                                     class="btn-tool" target="_blank"><i class="ph ph-download-simple"></i> Android APK
                                     (Optimized)</a>
-                                <a href="https://git.eden-emu.dev/eden-ci/nightly/releases/tag/v1775241410.ac99ea96da"
-                                    class="btn-tool" target="_blank"><i class="ph ph-git-branch"></i> Eden Nightly
-                                    (Recommended)</a>
                                 <a href="https://files.prodkeys.net/ProdKeys.NET-v22.1.0.zip" class="btn-tool"
                                     target="_blank"><i class="ph ph-key"></i> Prod Keys v22.1</a>
                                 <a href="https://github.com/THZoria/NX_Firmware/releases/download/22.1.0/Firmware.22.1.0.zip"
                                     class="btn-tool" target="_blank"><i class="ph ph-package"></i> Firmware 22.1.0</a>
+                            </div>
+                        </div>
+
+                        <!-- Citron Emulator (Alternative) -->
+                        <div class="tool-card glass animate-on-scroll delay-1">
+                            <div class="tool-card__header">
+                                <div class="tool-card__icon"><i class="ph-fill ph-lightning"></i></div>
+                                <div>
+                                    <h3>Citron Emulator</h3>
+                                    <p>Alternative for Android</p>
+                                </div>
+                            </div>
+                            <div class="tool-links">
+                                <a href="https://gofile.io/d/ng3S4h"
+                                    class="btn-tool" target="_blank">
+                                    <i class="ph-fill ph-download-simple"></i> Download Citron APK
+                                </a>
+                                <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 8px; line-height: 1.4;">
+                                    Alternative version with keyboard support.</p>
                             </div>
                         </div>
 
