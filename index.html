@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomodachi Life | Play on Mobile, PC & Mac</title>
+    <meta name="description"
+        content="Learn how to play Tomodachi Life on your phone using an emulator. Tutorial, Video, and Game File included!">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.youtube.com">
+    <link rel="dns-prefetch" href="https://www.youtube.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..900&family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav class="nav" id="topBar">
+        <div class="nav__inner container">
+            <a href="#" class="nav__brand">
+                <img src="assets/images/Tomodachi_Life_-_Living_the_Dream_logo.svg.png" alt="Logo" class="nav__logo" fetchpriority="high">
+                <span>Tomodachi Mobile</span>
+            </a>
+            <div class="nav__links">
+                <a href="#fixes" class="nav__link">Fixes</a>
+                <a href="#tutorial" class="nav__link">Tutorials</a>
+                <a href="#proof" class="nav__link">Safety</a>
+                <button id="themeToggleNav" class="theme-toggle-btn" title="Toggle Theme">
+                    <i class="ph-bold ph-moon"></i>
+                </button>
+                <a href="#download" class="nav__cta"><i class="ph-fill ph-download-simple"></i> Download</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ═══════════════════════════════════════ HERO -->
+        <section class="hero" id="hero">
+            <div class="container hero__grid">
+                <div class="hero__text">
+                    <div class="hero__eyebrow animate-in">
+                        <span class="badge badge--new">🎮 New Release</span>
+                        <span class="badge badge--free">Free Guide</span>
+                    </div>
+                    <h1 class="hero__title animate-in delay-1">
+                        Play <span class="grad">Tomodachi Life</span><br>on Any Device
+                    </h1>
+                    <p class="hero__sub animate-in delay-2">
+                        Full emulation guide + game file. Works on <strong>Android</strong>, <strong>iOS</strong>,
+                        <strong>Windows</strong> & <strong>Mac</strong> — completely free.
+                    </p>
+                    <div class="platform-pills animate-in delay-3">
+                        <a href="#tutorial" class="pill pill--android"><i class="ph-fill ph-android-logo"></i>
+                            Android</a>
+                        <a href="#tutorial" class="pill pill--ios"><i class="ph-fill ph-apple-logo"></i> iOS</a>
+                        <a href="#tutorial" class="pill pill--win"><i class="ph-fill ph-windows-logo"></i> PC</a>
+                        <a href="#tutorial" class="pill pill--mac"><i class="ph-fill ph-apple-logo"></i> Mac</a>
+                    </div>
+                    <div class="hero__actions animate-in delay-4">
+                        <a href="#download" class="btn btn--primary btn--lg"><i class="ph-fill ph-download-simple"></i>
+                            Get Game File</a>
+                        <a href="#tutorial" class="btn btn--ghost btn--lg"><i class="ph ph-play-circle"></i> Watch
+                            Guide</a>
+                    </div>
+                    <div class="trust-row animate-in delay-5">
+                        <div class="trust-item"><i class="ph-fill ph-shield-check"></i> Virus-Free</div>
+                        <div class="trust-dot"></div>
+                        <div class="trust-item"><i class="ph-fill ph-lightning"></i> Fast Download</div>
+                        <div class="trust-dot"></div>
+                        <div class="trust-item"><i class="ph-fill ph-check-circle"></i> 3 Easy Steps</div>
+                    </div>
+                </div>
+                <div class="hero__visual animate-in delay-2">
+                    <div class="hero__cover-wrap">
+                        <img src="assets/images/tomodachigamecover.webp" alt="Tomodachi Life Game Cover"
+                            class="hero__cover" fetchpriority="high">
+                        <div class="hero__cover-glow"></div>
+                        <div class="hero__cover-badge">
+                            <i class="ph-fill ph-star"></i> Nintendo Switch
+                        </div>
+                    </div>
+                    <div class="hero__meta-cards">
+                        <div class="meta-chip"><i class="ph-fill ph-hard-drives"></i> 6.2 GB</div>
+                        <div class="meta-chip"><i class="ph-fill ph-check-circle"></i> v1.0.0</div>
+                        <div class="meta-chip"><i class="ph-fill ph-calendar-blank"></i> 2026</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Disclaimer -->
+            <div class="container">
+                <div class="disclaimer animate-in delay-5">
+                    <i class="ph-fill ph-warning-circle"></i>
+                    <p><strong>Note:</strong> Since this game is new to emulation, you may encounter minor glitches.
+                        Developers are actively releasing patches.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════ SUPPORT CTA -->
+        <section id="support" class="support-cta-section">
+            <div class="container">
+                <div class="support-cta-card glass animate-on-scroll">
+                    <div class="support-cta-content">
+                        <span class="section-tag accent"><i class="ph-fill ph-wrench"></i> Instant Support</span>
+                        <h2>Need Help?</h2>
+                        <p>Our interactive Support Bot has all the solutions for emulator and game issues. From fixing
+                            **Black Grass** to **Keyboard Crashes**, you'll find it all there!</p>
+
+                        <div class="disclaimer disclaimer--error"
+                            style="margin: 20px 0; background: rgba(255, 107, 107, 0.05); border: 1px solid rgba(255, 107, 107, 0.2);">
+                            <i class="ph-fill ph-warning-circle" style="color: var(--accent);"></i>
+                            <p style="font-size: 0.85rem; color: var(--text);"><strong>Important Note:</strong> The
+                                emulators are still unstable. You must wait for the developers to release a stable
+                                emulator version for Tomodachi Life.</p>
+                        </div>
+
+                        <button class="btn btn--vibrant" onclick="toggleChat(true)">
+                            <i class="ph-fill ph-chat-circle-dots"></i> Open Support Chat
+                        </button>
+                    </div>
+                    <div class="support-cta-icon">
+                        <i class="ph ph-headset"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ═══════════════════════════════════════ TUTORIALS -->
+        <section id="tutorial" class="tutorials">
+            <div class="container">
+                <div class="section-head animate-on-scroll">
+                    <span class="section-tag accent"><i class="ph-fill ph-play-circle"></i> Video Guides</span>
+                    <h2>How to Install</h2>
+                    <p>Select your platform to see the step-by-step setup guide</p>
+                </div>
+
+                <div class="platform-tabs animate-on-scroll">
+                    <button class="tab-btn active" data-tab="android"><i class="ph-fill ph-android-logo"></i>
+                        Android</button>
+                    <button class="tab-btn" data-tab="ios"><i class="ph-fill ph-apple-logo"></i> iOS</button>
+                    <button class="tab-btn" data-tab="windows"><i class="ph-fill ph-windows-logo"></i> Windows
+                        PC</button>
+                    <button class="tab-btn" data-tab="mac"><i class="ph-fill ph-apple-logo"></i> macOS</button>
+                </div>
+
+                <div class="tab-content animate-on-scroll">
+                    <!-- Android -->
+                    <div class="tab-panel active" id="tab-android">
+                        <div class="tutorial-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                            <!-- Citron Guide -->
+                            <div class="tutorial-card glass" style="border: 1px solid var(--secondary);">
+                                <div class="step-badge" style="background: var(--secondary); color: #000;">NEW GUIDE</div>
+                                <div class="video-wrapper blurred" onclick="this.classList.remove('blurred')">
+                                    <div class="video-unlock-overlay"><i class="ph ph-lock-key"></i><span>Click to Unlock
+                                            Citron Guide</span></div>
+                                    <iframe data-src="https://www.youtube.com/embed/Q2pejCYFtno" title="Citron Android Setup Guide"
+                                        allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="tutorial-info">
+                                    <h3>🍋 Citron — Best Android Setup <span class="badge badge--new" style="background: var(--secondary); color: #000; font-size: 0.6rem;">NEW</span></h3>
+                                    <p>How to setup Citron (No Black Grass & Fixes Keyboard crashes).</p>
+                                </div>
+                            </div>
+                            <!-- General Guide -->
+                            <div class="tutorial-card glass" style="opacity: 0.8;">
+                                <div class="step-badge" style="background: rgba(244, 63, 94, 0.15); color: var(--primary);">NOT RECOMMENDED</div>
+                                <div class="video-wrapper blurred" onclick="this.classList.remove('blurred')">
+                                    <div class="video-unlock-overlay"><i class="ph ph-lock-key"></i><span>Click to Unlock
+                                            Old Guide</span></div>
+                                    <iframe data-src="https://www.youtube.com/embed/s9SQCUaClPw" title="General Android Setup Guide"
+                                        allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="tutorial-info">
+                                    <h3>🤖 Eden/MeloNX — Setup Guide</h3>
+                                    <p>Old setup for other emulators. May have black grass or keyboard crashes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- iOS (3 Steps) -->
+                    <div class="tab-panel" id="tab-ios">
+                        <!-- Expert Guide Header -->
+                        <div style="margin-bottom: 25px; padding: 20px; background: rgba(61, 181, 231, 0.08); border: 2px dashed var(--primary); border-radius: 16px; text-align: center;">
+                            <h3 style="color: var(--primary); margin-bottom: 8px;"><i class="ph-fill ph-book-open-text"></i> MASTER iOS EXPERT GUIDE</h3>
+                            <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px;">This document covers everything: 2FA fixes, keyboard crashes, and memory limits. <strong>Read this first!</strong></p>
+                            <div style="display: flex; gap: 12px; justify-content: center;">
+                                <a href="https://docs.google.com/document/d/1U0xe9uF3EJwEpi-_xmTTS5uzCMXP-S0Z/edit?usp=sharing&ouid=117750141242890927224&rtpof=true&sd=true" target="_blank" class="btn btn--vibrant" style="flex: 1; max-width: 200px; box-shadow: 0 4px 20px rgba(61, 181, 231, 0.4);">
+                                    <i class="ph-fill ph-eye"></i> READ ONLINE
+                                </a>
+                                <a href="assets/docs/ios_guide.docx" target="_blank" class="btn btn--ghost" style="flex: 1; max-width: 200px;">
+                                    <i class="ph-fill ph-download-simple"></i> DOWNLOAD
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="ios-tutorial-grid">
+                            <!-- Step 1 -->
+                            <div class="tutorial-card glass">
+                                <div class="video-wrapper blurred" onclick="this.classList.remove('blurred')">
+                                    <div class="video-unlock-overlay"><i class="ph ph-lock-key"></i><span>Click to reveal the video</span></div>
+                                    <iframe data-src="https://www.youtube.com/embed/GaukdP8MsE8" title="How To Sideload Apps And Enable JIT" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="tutorial-info">
+                                    <h3>🍏 iOS — Step 1</h3>
+                                    <p>Sideloading Apps & Enabling JIT on iOS.</p>
+                                </div>
+                            </div>
+                            <!-- Step 2 -->
+                            <div class="tutorial-card glass">
+                                <div class="video-wrapper blurred" onclick="this.classList.remove('blurred')">
+                                    <div class="video-unlock-overlay"><i class="ph ph-lock-key"></i><span>Click to reveal the video</span></div>
+                                    <iframe data-src="https://www.youtube.com/embed/pZQeZK3CY4c" title="How To Set Up GetMoreRam And MeloNX" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="tutorial-info">
+                                    <h3>🍏 iOS — Step 2</h3>
+                                    <p>Setting up GetMoreRam & MeloNX Emulator.</p>
+                                </div>
+                            </div>
+                            <!-- Step 3 -->
+                            <div class="tutorial-card glass">
+                                <div class="tutorial-settings">
+                                    <div class="settings-header">
+                                        <i class="ph-fill ph-gear"></i>
+                                        <span>Required MeloNX Settings</span>
+                                    </div>
+                                    <ul class="settings-list" style="list-style: none; padding: 0; margin: 10px 0; font-size: 0.85rem; color: var(--text);">
+                                        <li style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05);"><span>Shader Cache</span> <strong style="color: var(--primary);">ON</strong></li>
+                                        <li style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05);"><span>VSync</span> <strong style="color: var(--primary);">ON</strong></li>
+                                        <li style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05);"><span>Docked Mode</span> <strong style="color: var(--primary);">ON</strong></li>
+                                        <li style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05);"><span>Macro HLE</span> <strong style="color: #ff6b6b;">OFF</strong></li>
+                                        <li style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05);"><span>Resolution</span> <strong style="color: var(--primary);">1.00x</strong></li>
+                                        <li style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05);"><span>Dual Mapped JIT</span> <strong style="color: var(--primary);">ON</strong></li>
+                                        <li style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05);"><span>Memory Manager</span> <strong style="color: #ff6b6b;">Host Unchecked</strong></li>
+                                        <li style="display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05);"><span>Ignore Services</span> <strong style="color: var(--primary);">ON</strong></li>
+                                    </ul>
+                                </div>
+                                <div class="tutorial-info">
+                                    <h3>🍏 iOS — Step 3</h3>
+                                    <p>Optimal configuration for stability.</p>
+                                    <div class="tutorial-tip warning"><i class="ph-fill ph-warning-circle"></i> <strong>Important:</strong> These settings prevent crashes!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Windows -->
+                    <div class="tab-panel" id="tab-windows">
+                        <div class="tutorial-card glass">
+                            <div class="video-wrapper blurred" onclick="this.classList.remove('blurred')">
+                                <div class="video-unlock-overlay"><i class="ph ph-lock-key"></i><span>Click to Unlock
+                                        Guide</span></div>
+                                <iframe data-src="https://www.youtube.com/embed/8bPtK2EafF0" title="Windows Setup Guide"
+                                    allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <div class="tutorial-info">
+                                <h3>💻 Windows — Eden Setup</h3>
+                                <p>Best performance for desktop users using Eden Emulator.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mac -->
+                    <div class="tab-panel" id="tab-mac">
+                        <div class="tutorial-card glass">
+                            <div class="video-wrapper blurred" onclick="this.classList.remove('blurred')">
+                                <div class="video-unlock-overlay"><i class="ph ph-lock-key"></i><span>Click to Unlock
+                                        Guide</span></div>
+                                <iframe data-src="https://www.youtube.com/embed/GeCPHzSbFbo" title="Mac Setup Guide"
+                                    allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <div class="tutorial-info">
+                                <h3>🍎 macOS — Eden Setup</h3>
+                                <p>Optimized for Apple Silicon (M1/M2/M3/M4) chips.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════ DOWNLOAD -->
+        <section id="download" class="download-section">
+            <div class="container">
+                <div class="section-head animate-on-scroll">
+                    <span class="section-tag accent"><i class="ph-fill ph-sparkle"></i> Downloads</span>
+                    <h2>Get Everything You Need</h2>
+                    <p>Download the game file and emulator tools below</p>
+                </div>
+
+                <div class="dl-grid">
+                    <!-- Game File Card -->
+                    <div class="dl-card glass animate-on-scroll">
+                        <div class="dl-card__game-banner">
+                            <img src="assets/images/tomodachigamecover.webp" alt="Tomodachi Life Cover"
+                                class="dl-card__cover" loading="lazy" decoding="async">
+                            <div class="dl-card__game-info">
+                                <h3>Tomodachi Life: Living the Dream</h3>
+                                <p class="dl-card__meta">Nintendo • 6.2 GB • v1.0.0</p>
+                                <div class="dl-card__tags">
+                                    <span class="badge badge--online">.NSP</span>
+                                    <span class="badge badge--online">.XCI</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dl-card__header" style="margin-top:16px;">
+                            <div class="dl-card__icon"><i class="ph-fill ph-download-simple"></i></div>
+                            <div>
+                                <h3>Download Game File</h3>
+                                <p>Download only ONE link — all provide the same file</p>
+                            </div>
+                        </div>
+                        <div class="dl-notice">
+                            <i class="ph-fill ph-info"></i>
+                            <span>Pick the link that works best for you. <strong>One download is all you
+                                    need.</strong></span>
+                        </div>
+                        <div class="link-list">
+                            <div class="link-row link-row--best">
+                                <div class="link-info">
+                                    <span class="link-name">GoFile (Fast)</span>
+                                    <span class="badge badge--rec">✦ Recommended</span>
+                                </div>
+                                <a href="https://gofile.io/d/8TtjPR" class="btn-dl" target="_blank">
+                                    <i class="ph ph-download-simple"></i> Download
+                                </a>
+                            </div>
+                            <div class="link-row link-row--best">
+                                <div class="link-info">
+                                    <span class="link-name">Archive.org (Direct)</span>
+                                    <span class="badge badge--rec">✦ Recommended</span>
+                                </div>
+                                <a href="https://archive.org/download/tomodachi-life-living-the-dream_nsp/Tomodachi%20Life%20Living%20the%20Dream.nsp"
+                                    class="btn-dl" target="_blank">
+                                    <i class="ph ph-download-simple"></i> Download
+                                </a>
+                            </div>
+                            <div class="link-row" style="opacity: 0.8;">
+                                <div class="link-info">
+                                    <span class="link-name">Google Drive</span>
+                                    <span class="badge badge--offline">Taken Down</span>
+                                    <p
+                                        style="font-size: 0.72rem; color: var(--primary); font-weight: 600; width: 100%; margin-top: 2px;">
+                                        Choose GoFile option instead</p>
+                                </div>
+                                <a href="javascript:void(0)" class="btn-dl btn-dl--ghost"
+                                    style="cursor: not-allowed; filter: grayscale(1);">
+                                    <i class="ph ph-prohibit"></i> Taken Down
+                                </a>
+                            </div>
+                            <div class="link-row">
+                                <div class="link-info">
+                                    <span class="link-name">DataVaults (EU)</span>
+                                    <span class="badge badge--online">Online</span>
+                                </div>
+                                <a href="https://datavaults.co/0e11vulroqis/Tomodachi_Life:_Living_the_Dream_[010051F0207B2000][v0](axekin.com).xci.zip"
+                                    class="btn-dl btn-dl--ghost" target="_blank">
+                                    <i class="ph ph-download-simple"></i> Download
+                                </a>
+                            </div>
+                            <div class="link-row">
+                                <div class="link-info">
+                                    <span class="link-name">FileQ (EU)</span>
+                                    <span class="badge badge--online">Online</span>
+                                </div>
+                                <a href="https://fileq.net/ngtwe00unox7.html" class="btn-dl btn-dl--ghost"
+                                    target="_blank">
+                                    <i class="ph ph-download-simple"></i> Download
+                                </a>
+                            </div>
+                            <div class="link-row">
+                                <div class="link-info">
+                                    <span class="link-name">MEGA Mirror</span>
+                                    <span class="badge badge--online">Online</span>
+                                </div>
+                                <a href="https://mega.nz/file/ET1WSKrJ#jS5FQWpaUvLqXyLbxJno-ywD1yadAVa678kRqecq6BY"
+                                    class="btn-dl btn-dl--ghost" target="_blank">
+                                    <i class="ph ph-download-simple"></i> Download
+                                </a>
+                            </div>
+
+                            <div class="link-row">
+                                <div class="link-info">
+                                    <span class="link-name">Slow Mirror</span>
+                                    <span class="badge badge--online">Online</span>
+                                </div>
+                                <a href="https://nswgame.com/tomodachi-life-living-the-dream-nintendo-switch-nsp-xci-nsz-download-free/"
+                                    class="btn-dl btn-dl--ghost" target="_blank">
+                                    <i class="ph ph-download-simple"></i> Download
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dl-tip"><i class="ph-fill ph-archive"></i> Extract the .rar/.zip to get the
+                            <strong>.nsp</strong> or <strong>.xci</strong> file.
+                        </div>
+                    </div>
+
+                    <!-- Tools Column -->
+                    <div class="tools-column">
+                        <!-- Citron Emulator -->
+                        <div class="tool-card glass animate-on-scroll delay-1" style="border: 2px solid var(--secondary); background: rgba(253, 184, 19, 0.05);">
+                            <div class="tool-card__header">
+                                <div class="tool-card__icon" style="background: rgba(253, 184, 19, 0.15);"><i class="ph-fill ph-lightning"></i></div>
+                                <div>
+                                    <h3 style="color: var(--secondary);">Citron Emulator (Best)</h3>
+                                    <p>Recommended for Android</p>
+                                </div>
+                            </div>
+                            <div class="tool-links">
+                                <div class="dl-notice" style="margin-bottom: 12px; background: rgba(253, 184, 19, 0.1); color: var(--text);">
+                                    <i class="ph-fill ph-star" style="color: var(--secondary);"></i>
+                                    <span>Fixes <strong>Black Screen</strong>, <strong>Black Grass</strong>, and <strong>Keyboard</strong> crashes!</span>
+                                </div>
+                                <a href="https://gofile.io/d/ng3S4h"
+                                    class="btn-tool btn-tool--vibrant" target="_blank" style="background: var(--secondary); color: #000;">
+                                    <i class="ph-fill ph-download-simple"></i> Download Citron APK
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Eden Emulator -->
+                        <div class="tool-card glass animate-on-scroll delay-1">
+                            <div class="tool-card__header">
+                                <div class="tool-card__icon"><i class="ph-fill ph-cpu"></i></div>
+                                <div>
+                                    <h3>Eden Emulator</h3>
+                                    <p>Android / Windows / Mac</p>
+                                </div>
+                            </div>
+                            <div class="tool-links">
+                                <a href="https://git.eden-emu.dev/eden-ci/pr/releases/tag/3901"
+                                    class="btn-tool btn-tool--vibrant" target="_blank" style="background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); color: #10B981;">
+                                    <i class="ph-fill ph-sparkle"></i> Eden v3901 (Black Grass Fix)
+                                </a>
+                                <a href="https://git.eden-emu.dev/eden-ci/nightly/releases/download/v1776193290.f11b69d6b7/Eden-Android-f11b69d6b7-optimized.apk"
+                                    class="btn-tool" target="_blank"><i class="ph ph-download-simple"></i> Android APK
+                                    (Optimized)</a>
+                                <a href="https://git.eden-emu.dev/eden-ci/nightly/releases/tag/v1775241410.ac99ea96da"
+                                    class="btn-tool" target="_blank"><i class="ph ph-git-branch"></i> Eden Nightly
+                                    (Recommended)</a>
+                                <a href="https://files.prodkeys.net/ProdKeys.NET-v22.1.0.zip" class="btn-tool"
+                                    target="_blank"><i class="ph ph-key"></i> Prod Keys v22.1</a>
+                                <a href="https://github.com/THZoria/NX_Firmware/releases/download/22.1.0/Firmware.22.1.0.zip"
+                                    class="btn-tool" target="_blank"><i class="ph ph-package"></i> Firmware 22.1.0</a>
+                            </div>
+                        </div>
+
+                        <!-- Ryujinx Emulator -->
+                        <div class="tool-card glass animate-on-scroll delay-2">
+                            <div class="tool-card__header">
+                                <div class="tool-card__icon" style="background: rgba(147,51,234,0.15);"><i
+                                        class="ph-fill ph-desktop"></i></div>
+                                <div>
+                                    <h3>Ryujinx Emulator</h3>
+                                    <p>Alternative for PC (Windows)</p>
+                                </div>
+                            </div>
+                            <div class="tool-links">
+                                <a href="https://drive.google.com/file/d/1guCfxpCZOuq950S0ExkZ5uDpGe6tCHtN/view?usp=drivesdk"
+                                    class="btn-tool" target="_blank"><i class="ph ph-download-simple"></i> Download
+                                    Emulator</a>
+                                <a href="https://darthsternie.net/switch-firmwares/" class="btn-tool" target="_blank"><i
+                                        class="ph ph-package"></i> Firmware v22.1</a>
+                                <a href="https://prodkeys.net/ryujinx-prod-keys-n11/" class="btn-tool"
+                                    target="_blank"><i class="ph ph-key"></i> Prod Keys v22.1</a>
+                                <p
+                                    style="font-size: 0.82rem; color: var(--text-muted); margin-top: 8px; line-height: 1.4;">
+                                    Click links to download. Make sure keys match firmware (22.1).</p>
+                            </div>
+                        </div>
+
+                        <!-- Universal Tools -->
+                        <div class="tool-card glass animate-on-scroll delay-2">
+                            <div class="tool-card__header">
+                                <div class="tool-card__icon" style="background: rgba(253,184,19,0.15);"><i
+                                        class="ph-fill ph-archive"></i></div>
+                                <div>
+                                    <h3>Universal Files</h3>
+                                    <p>All-in-one resources</p>
+                                </div>
+                            </div>
+                            <div class="tool-links">
+                                <a href="https://prodkeys.net/" class="btn-tool" target="_blank"><i
+                                        class="ph ph-link"></i> All Keys & Firmware</a>
+                                <p
+                                    style="font-size: 0.82rem; color: var(--text-muted); margin-top: 8px; line-height: 1.4;">
+                                    You will find all keys and firmware for your emulator here.</p>
+                            </div>
+                        </div>
+
+                        <!-- iOS Tools -->
+                        <div class="tool-card glass animate-on-scroll delay-2">
+                            <div class="tool-card__header">
+                                <div class="tool-card__icon" style="background: rgba(255,255,255,0.1);"><i
+                                        class="ph-fill ph-apple-logo"></i></div>
+                                <div>
+                                    <h3>iOS Tools</h3>
+                                    <p>MeloNX Emulator</p>
+                                </div>
+                            </div>
+                            <div class="tool-links">
+                                <a href="https://github.com/VertexSelection/MeloVertex/releases/download/2.4.5/MeloVertex.ipa" class="btn-tool" target="_blank" style="background: var(--secondary); color: #000; border: none; font-weight: 800;">
+                                    <i class="ph-fill ph-star"></i> MeloVertex v2.4.5 (Recommended)
+                                </a>
+                                <p style="font-size: 0.78rem; color: var(--secondary); margin: -8px 0 12px 12px; font-weight: 700; background: rgba(253, 184, 19, 0.1); padding: 4px 8px; border-radius: 6px; display: inline-block;">
+                                    New 5/9/2026 version - Less glitches & crashes
+                                </p>
+                                <a href="https://git.ryujinx.app/projects/MeloNX/releases/download/2.2/MeloNX.ipa" class="btn-tool"
+                                    target="_blank"><i class="ph ph-cpu"></i> MeloNX v2.2 (Stable)</a>
+                                <a href="https://www.mediafire.com/file/djgeop8bw6pjy6b/MeloNX_TomoFix.ipa/file"
+                                    class="btn-tool" target="_blank"><i class="ph ph-sparkle"></i> MeloNX TomoFix (Fixes Crashes)</a>
+                                <a href="https://drive.google.com/file/d/1Yt_f2x5IGsiiDr3FbSy4R5f1qdGtewzv/view?usp=drivesdk"
+                                    class="btn-tool" target="_blank"><i class="ph ph-keyboard"></i> v2.3.1 Keyboard Patch</a>
+                                <a href="https://apps.apple.com/app/id6755608044" class="btn-tool"
+                                    target="_blank"><i class="ph ph-shield-check"></i> LocalDevVPN Utility</a>
+                                <a href="https://prodkeys.net/ryujinx-prod-keys-update//" class="btn-tool"
+                                    target="_blank"><i class="ph ph-key"></i> Switch Keys (iOS)</a>
+                                <a href="https://prodkeys.net/latest-switch-firmwares-updated/" class="btn-tool"
+                                    target="_blank"><i class="ph ph-package"></i> Console Firmware (iOS)</a>
+                                <div style="margin-top: 12px; padding: 12px; background: rgba(61, 181, 231, 0.05); border: 1px dashed var(--primary); border-radius: 12px;">
+                                    <p style="font-size: 0.8rem; margin-bottom: 8px; color: var(--text); font-weight: 600;">📚 EXPERT iOS SETUP GUIDE (Updated)</p>
+                                    <div style="display: flex; gap: 8px;">
+                                        <a href="https://docs.google.com/document/d/1U0xe9uF3EJwEpi-_xmTTS5uzCMXP-S0Z/edit?usp=sharing&ouid=117750141242890927224&rtpof=true&sd=true" target="_blank" class="btn btn--vibrant btn--sm" style="flex: 1; font-size: 0.7rem; padding: 8px;"><i class="ph ph-eye"></i> READ ONLINE</a>
+                                        <a href="assets/docs/ios_guide.docx" target="_blank" class="btn btn--ghost btn--sm" style="flex: 1; font-size: 0.7rem; padding: 8px;"><i class="ph ph-download"></i> DOWNLOAD</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- GPU Drivers -->
+                        <div class="tool-card glass animate-on-scroll delay-3">
+                            <div class="tool-card__header">
+                                <div class="tool-card__icon" style="background: rgba(76,201,240,0.15);"><i
+                                        class="ph-fill ph-circuit-board"></i></div>
+                                <div>
+                                    <h3>GPU Drivers</h3>
+                                    <p>Mali GPU support</p>
+                                </div>
+                            </div>
+                            <div class="tool-links">
+                                <a href="gpu driver/ARM-Mali-G610-MP3_Driver-1.zip" class="btn-tool" download><i
+                                        class="ph ph-download-simple"></i> Mali G610 Driver</a>
+                                <a href="gpu driver/ARM-Mali-G72-MP3_Driver.zip" class="btn-tool" download><i
+                                        class="ph ph-download-simple"></i> Mali G72 Driver</a>
+                                <a href="gpu driver/custom_mali_driver.zip" class="btn-tool" download><i
+                                        class="ph ph-download-simple"></i> Mali G72 Fix</a>
+                                <a href="https://www.mediafire.com/file/0q2jt1pwlco2tu2/All+Mali+GPU+Drivers+.zip/file"
+                                    class="btn-tool" target="_blank"><i class="ph ph-download-simple"></i> All Mali
+                                    Drivers Pack</a>
+                            </div>
+                        </div>
+
+                        <!-- Hardware Requirements -->
+                        <div class="req-card glass animate-on-scroll delay-3">
+                            <div class="req-card__title"><i class="ph-fill ph-warning-circle"></i> Min. Hardware
+                                (Android)</div>
+                            <ul class="req-list">
+                                <li><strong>CPU</strong> Snapdragon 700 series+</li>
+                                <li><strong>GPU</strong> Adreno 600+ (610 may not work)</li>
+                                <li><strong>RAM</strong> 6 GB minimum</li>
+                                <li><strong>OS</strong> Android 9 or above</li>
+                                <li><strong>Mali GPUs</strong> Requires specific driver</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more-games animate-on-scroll">
+                    <p>Looking for more Switch games? <a href="https://nswgame.com/" target="_blank"
+                            class="inline-link">NSWGame →</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════════════════════════════════ SAFETY -->
+    <section id="proof" class="proof-section">
+        <div class="container">
+            <div class="section-head animate-on-scroll">
+                <span class="section-tag safe"><i class="ph-fill ph-shield-check"></i> Verified Safe</span>
+                <h2>100% Virus-Free</h2>
+                <p>Every file is manually scanned before listing.</p>
+            </div>
+            <div class="proof-card glass animate-on-scroll">
+                <div class="proof-badges">
+                    <div class="proof-badge"><i class="ph-fill ph-shield-check"></i> VirusTotal Scanned</div>
+                    <div class="proof-badge"><i class="ph-fill ph-check-circle"></i> 0 / 91 Engines Flagged</div>
+                </div>
+                <div class="proof-img-wrap">
+                    <img src="assets/images/proofsafe.jpg" alt="VirusTotal Security Scan" class="proof-img"
+                        onclick="this.classList.toggle('zoomed')" loading="lazy" decoding="async">
+                </div>
+                <a href="https://www.virustotal.com/gui/url/837fe733306c790cfb882ea7c87f78582375c000926e7180ed15315086b3f9ab"
+                    target="_blank" class="btn btn--ghost">
+                    <i class="ph ph-arrow-square-out"></i> View Live VirusTotal Report
+                </a>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <a href="#" class="footer__brand">
+                <img src="assets/images/Tomodachi_Life_-_Living_the_Dream_logo.svg.png" alt="Logo" height="32" loading="lazy">
+                <span>Tomodachi Mobile</span>
+            </a>
+            <p class="footer__copy">© 2026 Tomodachi Life Mobile Guide. Fan-made guide — not affiliated with Nintendo.
+            </p>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop"><i class="ph-bold ph-arrow-up"></i></a>
+
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+
+    <!-- Mobile Bottom Nav -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#hero" class="mnav-item active" data-section="hero"><i
+                class="ph-fill ph-house"></i><span>Home</span></a>
+        <a href="#fixes" class="mnav-item" data-section="fixes"><i class="ph ph-wrench"></i><span>Fixes</span></a>
+        <a href="#download" class="mnav-item mnav-main" data-section="download">
+            <div class="mnav-main-btn"><i class="ph-fill ph-download-simple"></i></div><span>Download</span>
+        </a>
+        <a href="#tutorial" class="mnav-item" data-section="tutorial"><i
+                class="ph ph-play-circle"></i><span>Guides</span></a>
+        <a href="javascript:void(0)" class="mnav-item" id="themeToggleMobile"><i
+                class="ph ph-moon"></i><span>Theme</span></a>
+    </nav>
+
+    <div class="support-widget">
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <div class="chat-avatar">
+                    <i class="ph-fill ph-headset"></i>
+                </div>
+                <div class="chat-header-info">
+                    <h4>Tomodachi Support</h4>
+                    <span>Online • Instant Fixes</span>
+                </div>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="message message--bot">
+                    Hello! I'm your Tomodachi Support assistant. To get playing, just follow these steps:<br>
+                    1️⃣ Grab the game file from the links below<br>
+                    2️⃣ Watch the setup tutorial for your system<br>
+                    3️⃣ Get your emulator, keys, and firmware ready<br>
+                    
+                    <div style="background: rgba(61, 181, 231, 0.1); border: 1px solid rgba(61, 181, 231, 0.2); border-radius: 10px; padding: 10px; margin: 12px 0; border-left: 4px solid var(--primary); text-align: left;">
+                        <span style="font-size: 0.85rem; color: var(--text-muted); display: block; margin-bottom: 4px;">📲 iOS Setup Guide:</span>
+                        <div style="display: flex; gap: 5px;">
+                            <a href="https://docs.google.com/document/d/1U0xe9uF3EJwEpi-_xmTTS5uzCMXP-S0Z/edit?usp=sharing&ouid=117750141242890927224&rtpof=true&sd=true" target="_blank" style="color: var(--primary); font-weight: 800; text-decoration: none; font-size: 0.8rem;">[READ ONLINE]</a>
+                            <a href="assets/docs/ios_guide.docx" target="_blank" style="color: var(--text-muted); font-weight: 600; text-decoration: none; font-size: 0.8rem;">[DOWNLOAD]</a>
+                        </div>
+                    </div>
+
+                    What can I help you with?
+                </div>
+                <div class="chat-options">
+                    <div class="chat-option" onclick="handleOption('Android Issues')"><i
+                            class="ph-fill ph-android-logo"></i> Android Issues</div>
+                    <div class="chat-option" onclick="handleOption('iOS Issues')"><i class="ph-fill ph-apple-logo"></i>
+                        iOS Issues</div>
+                    <div class="chat-option" onclick="handleOption('Download Help')"><i
+                            class="ph-fill ph-download-simple"></i> Download Help</div>
+                    <div class="chat-option" onclick="handleOption('Hardware Specs')"><i class="ph-fill ph-cpu"></i>
+                        Hardware Specs</div>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <button onclick="resetChat()"><i class="ph ph-arrow-counter-clockwise"></i> Reset Chat</button>
+            </div>
+        </div>
+        <div class="chat-notification" id="chatNotify">
+            <span>Need a solution? Click here! 💬</span>
+        </div>
+        <button class="chat-toggle" id="chatToggle">
+            <i class="ph-fill ph-chat-circle-dots"></i>
+        </button>
+    </div>
+
+    <!-- External Script was moved to head and deferred -->
+    <script>
+        const themeToggleNav = document.getElementById('themeToggleNav');
+        const themeToggleMobile = document.getElementById('themeToggleMobile');
+        const html = document.documentElement;
+
+        function setTheme(theme) {
+            html.setAttribute('data-theme', theme);
+            localStorage.setItem('theme', theme);
+            updateIcons(theme);
+        }
+
+        function updateIcons(theme) {
+            const iconClass = theme === 'dark' ? 'ph-bold ph-sun' : 'ph-bold ph-moon';
+            const mobileIconClass = theme === 'dark' ? 'ph ph-sun' : 'ph ph-moon';
+
+            themeToggleNav.querySelector('i').className = iconClass;
+            themeToggleMobile.querySelector('i').className = mobileIconClass;
+        }
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        setTheme(savedTheme);
+
+        [themeToggleNav, themeToggleMobile].forEach(btn => {
+            btn.addEventListener('click', () => {
+                const currentTheme = html.getAttribute('data-theme');
+                setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+            });
+        });
+    </script>
+    <!-- Welcome Modal -->
+    <div class="modal-overlay" id="welcomeModal">
+        <div class="welcome-modal">
+            <div class="modal-header">
+                <div class="modal-badge"><i class="ph-fill ph-hand-waving"></i> Hello!</div>
+                <div class="modal-character">
+                    <img src="assets/images/Tomodachi_Life_-_Living_the_Dream_logo.svg.png" alt="Tomodachi Logo" class="floating-logo">
+                </div>
+                <h2>Island Notice!</h2>
+                <p>Quick tips for the best experience 🌴</p>
+                <div class="disclaimer" style="margin-top: 10px; background: rgba(253, 184, 19, 0.1); border-color: rgba(253, 184, 19, 0.2); color: var(--text); padding: 10px;">
+                    <i class="ph-fill ph-play-circle" style="color: var(--secondary);"></i>
+                    <p style="font-size: 0.8rem; margin: 0;"><strong>New Fix:</strong> Watch the new <strong><a href="#tutorial" id="scrollToTutorial" style="color: var(--secondary); text-decoration: underline;">Android Tutorial</a></strong> to fix black grass, black screen, and crashes!</p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-bubble">
+                    <div class="bubble-icon"><i class="ph-fill ph-browser"></i></div>
+                    <div class="bubble-content">
+                        <h4>Use Safari or Chrome</h4>
+                        <p>TikTok's internal browser often blocks downloads. Switch to your main browser!</p>
+                    </div>
+                </div>
+                <div class="modal-bubble">
+                    <div class="bubble-icon yellow"><i class="ph-fill ph-cloud-arrow-down"></i></div>
+                    <div class="bubble-content">
+                        <h4>Archive.org Mirror</h4>
+                        <p>If GoFile is slow or down, use the <strong>Archive.org</strong> link for a direct download.</p>
+                    </div>
+                </div>
+                <div class="modal-bubble">
+                    <div class="bubble-icon pink"><i class="ph-fill ph-apple-logo"></i></div>
+                    <div class="bubble-content">
+                        <h4>iOS Sideloading</h4>
+                        <p>You need a <strong>PC or Laptop</strong> to sideload MeloNX. Watch the 2 guide videos!</p>
+                    </div>
+                </div>
+                <div class="modal-bubble">
+                    <div class="bubble-icon green"><i class="ph-fill ph-chat-centered-text"></i></div>
+                    <div class="bubble-content">
+                        <h4>Need Help?</h4>
+                        <p>Read our expert document or ask the <strong>Support Bot</strong> at the bottom right.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-modal-close" id="closeWelcomeModal">OKAY, GOT IT! ✨</button>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="/_vercel/insights/script.js"></script>
+</body>
+
+</html>
