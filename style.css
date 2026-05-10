@@ -62,7 +62,8 @@ html {
 
 body {
     font-family: 'Outfit', sans-serif;
-    background: var(--bg-deep);
+    background: url('assets/images/tomodachithumbnail.jpg') no-repeat center center fixed;
+    background-size: cover;
     color: var(--text);
     line-height: 1.6;
     overflow-x: hidden;

@@ -205,14 +205,18 @@ const supportData = {
     },
     'iOS Issues': {
         msg: 'Select your iOS problem:',
-        options: ['SideStore 2FA', 'SideStore Refresh', 'Game Crash', 'MeloNX Settings', 'MeloNX Welcome Freeze']
+        options: ['Watch New Tutorial', 'SideStore 2FA', 'SideStore Refresh', 'Game Crash', 'Optimal Settings', 'Welcome Freeze']
+    },
+    'Watch New Tutorial': {
+        msg: 'The new 10-minute iOS tutorial covers everything from sideloading to JIT and MeloVertex setup. <br><br><a href="#tutorial" class="btn btn--primary" style="color: #fff; text-decoration: none;">[Go to Tutorial Video]</a>',
+        options: ['Back to Start']
     },
     'Download Help': {
         msg: 'The <strong>GoFile</strong> link is the most reliable. Download the .nsp or .xci, then extract the zip!',
         options: ['Back to Start']
     },
     'Hardware Specs': {
-        msg: '<strong>Minimum Requirements:</strong><br>• CPU: Snapdragon 700+<br>• RAM: 6GB+<br>• GPU: Adreno 600+ or Mali with drivers.',
+        msg: '<strong>Minimum Requirements (Android):</strong><br>• CPU: Snapdragon 700 series+<br>• GPU: Adreno 600+ (610 may not work)<br>• RAM: 6 GB minimum<br>• OS: Android 9 or above<br>• Mali GPUs: Requires specific driver',
         options: ['Back to Start']
     },
     'SideStore 2FA': {
@@ -233,21 +237,21 @@ const supportData = {
         options: ['Back to Start']
     },
     'Keyboard Crash': {
-        msg: '<strong>Android Fix:</strong> Use the <strong>Eden Nightly</strong> build. This version is currently the best for Android as it avoids crashes and supports stable gameplay! <br><br><a href="https://www.mediafire.com/file/ka2ex4f2g7o5rq8/Eden-Nightly-Android-17c341ff6c-standard.apk/file" target="_blank" style="color: var(--success); font-weight: bold; text-decoration: underline;">[Download Recommended Eden Nightly APK]</a> <br><br><strong>iOS Fix:</strong> Use the MeloNX 2.3.1 Fixed Version.',
+        msg: '<strong>Android Fix:</strong> Use the <strong>Eden Nightly</strong> build. This version is currently the best for Android as it avoids crashes and supports stable gameplay! <br><br><a href="https://www.mediafire.com/file/ka2ex4f2g7o5rq8/Eden-Nightly-Android-17c341ff6c-standard.apk/file" target="_blank" style="color: var(--success); font-weight: bold; text-decoration: underline;">[Download Recommended Eden Nightly APK]</a> <br><br><strong>iOS Fix:</strong> Use the new <strong>MeloVertex v2.4.5</strong> version — it has the keyboard patch built-in!',
         img: 'assets/images/tomodachi-life-problemfortyping.webp',
         options: ['Back to Start']
     },
-    'MeloNX Welcome Freeze': {
-        msg: '<strong>Fix:</strong> You should double tap the text "Welcome to MeloNX" to bypass the freeze (the text, not the button).',
+    'Welcome Freeze': {
+        msg: '<strong>Fix:</strong> You should double tap the text "Welcome to MeloNX/MeloVertex" to bypass the freeze (the text, not the button).',
         img: 'assets/images/melonx_welcome_freezebutton.jpg',
         options: ['Back to Start']
     },
     'Game Crash': {
-        msg: '<strong>Troubleshooting:</strong><br>1. Ensure <strong>JIT</strong> is enabled (via StikDebug).<br>2. Check if you are using <strong>MeloNX 2.3.1 Fix</strong> for keyboard crashes.<br>3. Verify all settings match our <strong>Optimal Settings</strong> list.',
+        msg: '<strong>Troubleshooting:</strong><br>1. Ensure <strong>JIT</strong> is enabled (via StikDebug).<br>2. Check if you are using <strong>MeloVertex v2.4.5</strong> for better stability.<br>3. Verify all settings match our <strong>Optimal Settings</strong> list.',
         img: 'assets/images/melonx_dev_will_release_new_vesrion_soon_for_melonx_tomdachi.jpg',
         options: ['Back to Start']
     },
-    'MeloNX Settings': {
+    'Optimal Settings': {
         msg: '<strong>Best Settings for iOS:</strong><br>• Shader Cache: On<br>• VSync: On<br>• Docked Mode: On<br>• Macro HLE: Off<br>• Resolution: 1.00<br>• Dual Mapped JIT: On<br>• Memory Manager: Host Unchecked<br>• Ignore Missing Services: On',
         options: ['Back to Start']
     },
@@ -256,7 +260,7 @@ const supportData = {
         options: ['Back to Start']
     },
     'Snapdragon Glitches': {
-        msg: '<strong>Snapdragon Fix:</strong> If you experience glitches on a Snapdragon phone:<br>1. Go to the <strong>GPU Drivers</strong> section.<br>2. Download the <strong>FIRST</strong> Turnip Kimchi version (not the last).<br>3. This version is more stable and fixes most graphical issues!',
+        msg: '<strong>Snapdragon Fix:</strong> If you experience glitches on a Snapdragon phone:<br>1. Go to the <strong>GPU Drivers</strong> section.<br>2. Download <strong>Mesa Turnip v25.3.0-r9</strong>.<br>3. Open Eden settings, go to <strong>GPU Drivers</strong>, and install this version to fix graphical issues!',
         options: ['Back to Start']
     },
     'Back to Start': {
@@ -321,7 +325,7 @@ function showOptions(options) {
 function resetChat() {
     chatBody.innerHTML = `
         <div class="message message--bot">
-            Hello! I'm your Tomodachi Support assistant.
+            Hello! I'm your Tomodachi Support assistant. <strong>The new 10-minute iOS Tutorial is now live!</strong>
             
             <div style="background: rgba(61, 181, 231, 0.1); border: 1px solid rgba(61, 181, 231, 0.2); border-radius: 10px; padding: 10px; margin: 12px 0; border-left: 4px solid var(--primary); text-align: left;">
                 <span style="font-size: 0.85rem; color: var(--text-muted); display: block; margin-bottom: 4px;">📲 iOS Setup Guide:</span>
